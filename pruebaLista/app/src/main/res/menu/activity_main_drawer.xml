@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_mapstore"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_perfilFragment"
+            android:icon="@drawable/ic_perfil"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/nav_usuarioClasesFragment"
+            android:icon="@drawable/ic_insert_drive_file"
+            android:title="@string/menu_clases_usuario" />
+        <item
+            android:id="@+id/nav_asigFragmentVolley"
+            android:icon="@drawable/ic_nav_shopping"
+            android:title="@string/menu_lista_aisgnaturas_VOLLEY" />
+        <item
+            android:id="@+id/nav_clases_volleyFragment"
+            android:icon="@drawable/ic_calendario"
+            android:title="@string/menu_lista_clases" />
+        <item
+            android:id="@+id/cerrarSesionFragment"
+            android:icon="@drawable/ic_cerrar"
+            android:title="@string/menu_cerrarSesion" />
+
+    </group>
+    <!--
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+    </group>
+    -->
+</menu>

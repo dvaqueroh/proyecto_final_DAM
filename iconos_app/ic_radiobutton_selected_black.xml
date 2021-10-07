@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="@dimen/resizable_4dp"
+        android:right="@dimen/resizable_4dp"
+        android:bottom="@dimen/resizable_4dp"
+        android:left="@dimen/resizable_4dp">
+        <shape
+            android:shape="oval">
+            <solid android:color="@color/black_000000" />
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="oval">
+            <stroke android:width="@dimen/resizable_1dp"
+                android:color="@color/grey_87868C"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.perfil.PerfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/perfil_frag"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btPerDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_perfil"
+            android:text="@string/perfil_datos"
+            android:textColor="@color/black"
+            app:elevation="40dp"
+            app:iconPadding="10dp" />
+        <Button
+            android:id="@+id/btPerPagos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_perfil"
+            android:text="@string/perfil_pagos"
+            android:textColor="@color/black"
+            app:elevation="40dp"
+            app:iconPadding="10dp" />
+        <Button
+            android:id="@+id/btPerPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_perfil"
+            android:text="@string/perfil_pass"
+            android:textColor="@color/black"
+            app:elevation="40dp"
+            app:iconPadding="10dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

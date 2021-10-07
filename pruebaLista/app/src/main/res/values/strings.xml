@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">app Escuela Musica</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="title_activity_menu_navegacion">MenuNavegacionActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">App Escuela de Musica</string>
+    <string name="nav_header_subtitle"> en desarrollo </string>
+    <string name="nav_header_desc"> App ESCUELA MUSICA </string>
+    <string name="action_settings">Settings</string>
+    <string name="calendario">Calendario de Clases</string>
+    <string name="comprarClases">Compra de Clases</string>
+    <string name="reservaClases">Reserva de Clases</string>
+    <string name="confirmar"> ¿ Quiere confirmar la reserva de la siguien clase? </string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_lista_aisgnaturas_VOLLEY">Comprar Clases</string>
+    <string name="menu_lista_clases">Reservar Clases</string>
+    <string name="menu_cerrarSesion">Cerrar Sesión</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="perfil_frag">PERFIL - MENU</string>
+    <string name="cerrarSesion_fragment">Cerrar Sesión</string>
+
+
+    <!-- arrays -->
+    <string-array name="formasPago">
+        <item>ninguna</item>
+        <item>Cuenta Bancaria</item>
+        <item>Tarjeta Debito/credito</item>
+        <item>Paypal</item>
+
+    </string-array>
+
+    <string-array name="paquetesClases">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Entrar </string>
+    <string name="welcome">"Bienvenido!"</string>
+    <string name="invalid_username">Usuario no valido</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="usuario">Usuario</string>
+    <string name="bienvenida">Bienvenido :</string>
+    <string name="menu_clases_usuario">Mis Clases</string>
+    <string name="mis_clases_fragment">Aqui podrás ver tus clases compradas y tus clases reservadas</string>
+    <string name="action_salir">Cerrar Aplicacion</string>
+    <string name="action_acercaDe">Acerca de:</string>
+    <string name="acerca_fragment">Acerca de :</string>
+    <string name="datos_usuario">Usuario: </string>
+    <string name="datos_Nombre">Nombre: </string>
+    <string name="datos_dni">Dni: </string>
+    <string name="datos_nacimiento">Fecha nacimiento: </string>
+    <string name="datos_telefono">Telfono: </string>
+    <string name="datos_emai">Email: </string>
+    <string name="pagos_tipo">Tipo de forma de pago: </string>
+    <string name="pagos_datos">Datos: </string>
+    <string name="pagos_confirmado">forma de pago Confirmada: </string>
+
+
+    <!-- PEFIL -->
+    <string name="perfil_datos">Datos personales</string>
+    <string name="perfil_pagos">Forma de pago</string>
+    <string name="perfil_pass">Modificar contraseña</string>
+    <!-- Texto ACERCA DE -->
+    <string name="acercaDe">App Escuela de Musica.
+        Version = 0.1 (Junio 2021)
+    Aplicacion de compra y gestion de clases de una escuela de musica.
+        Desarrollada por: David Vaquero
+    </string>
+    <string name="pagos_fragment">forma de pago actual</string>
+    <string name="pagos_mod_fragment">MODIFICAR DATOS DE PAGO</string>
+    <string name="datos_fragment">Modificacion Datos Personales</string>
+    <string name="datos_mod_fragment">Modificar Datos del Alumno</string>
+    <string name="pass_fragment">Modificar contraseña</string>
+    <string name="pass_actual">Contraseña Actual</string>
+    <string name="pass_nuevo1">Nueva contraseña</string>
+    <string name="pass_nuevo2">Confirme Contraseña</string>
+    <string name="misClaseDet">Detalle de la clase Pendiente</string>
+    <string name="datos_asignatura">Asignatura</string>
+    <string name="datos_fecha">Fecha:</string>
+    <string name="datos_hora">"Hora: "</string>
+    <string name="nav_header_user">Usuario</string>
+
+</resources>

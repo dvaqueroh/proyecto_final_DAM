@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/transparent" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    <item android:top="@dimen/resizable_2dp"
+        android:left="@dimen/resizable_2dp"
+        android:bottom="@dimen/resizable_2dp"
+        android:right="@dimen/resizable_2dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/white_ffffff"/>
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+</layer-list>

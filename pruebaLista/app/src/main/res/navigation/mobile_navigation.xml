@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pruebalista.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_passAlumFragment"
+            app:destination="@id/passAlumFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/asignaturaDetalleFragment"
+        android:name="com.example.pruebalista.ui.asignaturas.AsignaturaDetalleFragment"
+        android:label="fragment_asignatura_detalle"
+        tools:layout="@layout/fragment_asignatura_detalle" >
+        <action
+            android:id="@+id/action_asignaturaDetalleFragment_to_nav_asignaturasFragment"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="Asignatura"
+            app:argType="com.example.pruebalista.clases.Asignatura" />
+        <action
+            android:id="@+id/action_asignaturaDetalleFragment_to_nav_asigFragmentVolley"
+            app:destination="@id/nav_asigFragmentVolley" />
+        <action
+            android:id="@+id/action_asignaturaDetalleFragment_to_compaAsigFragment"
+            app:destination="@id/compraAsigFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_asigFragmentVolley"
+        android:name="com.example.pruebalista.ui.asignaturas.AsigFragmentVolley"
+        android:label="fragment_asig_volley"
+        tools:layout="@layout/fragment_asig_volley">
+        <action
+            android:id="@+id/action_asigFragmentVolley_to_asignaturaDetalleFragment"
+            app:destination="@id/asignaturaDetalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compraAsigFragment"
+        android:name="com.example.pruebalista.ui.asignaturas.CompaClasesFragment"
+        android:label="fragment_compa_asig"
+        tools:layout="@layout/fragment_compa_clase">
+        <action
+            android:id="@+id/action_compaAsigFragment_to_nav_asigFragmentVolley"
+            app:destination="@id/nav_asigFragmentVolley" />
+        <argument
+            android:name="Asignatura"
+            app:argType="com.example.pruebalista.clases.Asignatura" />
+        <action
+            android:id="@+id/action_compaAsigFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_clases_volleyFragment"
+        android:name="com.example.pruebalista.ui.clasesResarvas.ClasesFragmentVolley"
+        android:label="fragment_clases_volley"
+        tools:layout="@layout/fragment_clases_volley" >
+        <action
+            android:id="@+id/action_nav_clases_volleyFragment_to_calendarioFragment"
+            app:destination="@id/calendarioFragment" />
+        <argument
+            android:name="clase"
+            app:argType="com.example.pruebalista.clases.Clase" />
+        <action
+            android:id="@+id/action_nav_clases_volleyFragment_to_nav_asigFragmentVolley"
+            app:destination="@id/nav_asigFragmentVolley" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarioFragment"
+        android:name="com.example.pruebalista.ui.horasClases.CalendarioFragment"
+        android:label="fragment_calendario"
+        tools:layout="@layout/fragment_calendario" >
+        <action
+            android:id="@+id/action_calendarioFragment_to_nav_clases_volleyFragment"
+            app:destination="@id/nav_clases_volleyFragment" />
+        <action
+            android:id="@+id/action_calendarioFragment_to_horarioDiaFragment"
+            app:destination="@id/nav_horarioDiaFragment" />
+        <argument
+            android:name="clase"
+            app:argType="com.example.pruebalista.clases.Clase" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_horarioDiaFragment"
+        android:name="com.example.pruebalista.ui.horasClases.HorarioDiaFragment"
+        android:label="fragment_horario_dia_list"
+        tools:layout="@layout/fragment_horario_dia_list" >
+        <action
+            android:id="@+id/action_nav_horarioDiaFragment_to_reservaClaseFragment"
+            app:destination="@id/reservaClaseFragment" />
+        <argument
+            android:name="clase"
+            app:argType="com.example.pruebalista.clases.Clase" />
+    </fragment>
+    <fragment
+        android:id="@+id/reservaClaseFragment"
+        android:name="com.example.pruebalista.ui.clasesResarvas.ReservaClaseFragment"
+        android:label="fragment_reserva_clase"
+        tools:layout="@layout/fragment_reserva_clase" >
+        <action
+            android:id="@+id/action_reservaClaseFragment_to_nav_clases_volleyFragment"
+            app:destination="@id/nav_clases_volleyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_perfilFragment"
+        android:name="com.example.pruebalista.ui.perfil.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_nav_perfilFragment_to_pagosFragment"
+            app:destination="@id/pagosFragment" />
+        <action
+            android:id="@+id/action_nav_perfilFragment_to_datosAlumFragment"
+            app:destination="@id/datosAlumFragment" />
+        <action
+            android:id="@+id/action_nav_perfilFragment_to_passAlumFragment"
+            app:destination="@id/passAlumFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cerrarSesionFragment"
+        android:name="com.example.pruebalista.ui.perfil.CerrarSesionFragment"
+        android:label="fragment_cerrar_sesion"
+        tools:layout="@layout/fragment_cerrar_sesion" >
+        <action
+            android:id="@+id/action_cerrarSesionFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pruebalista.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_usuarioClasesFragment"
+        android:name="com.example.pruebalista.ui.misClases.UsuarioClasesFragment"
+        android:label="fragment_usuario_clases"
+        tools:layout="@layout/fragment_usuario_clases" >
+        <action
+            android:id="@+id/action_nav_usuarioClasesFragment_to_misClasesCalendarioFragment"
+            app:destination="@id/misClasesCalendarioFragment" />
+        <action
+            android:id="@+id/action_nav_usuarioClasesFragment_to_misClasesPendientesFragment"
+            app:destination="@id/misClasesPendientesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misClasesCalendarioFragment"
+        android:name="com.example.pruebalista.ui.misClases.misClasesCalendarioFragment"
+        android:label="fragment_mis_clases_calendario"
+        tools:layout="@layout/fragment_mis_clases_calendario" />
+    <fragment
+        android:id="@+id/acercaFragment"
+        android:name="com.example.pruebalista.acercaFragment"
+        android:label="fragment_acerca"
+        tools:layout="@layout/fragment_acerca" />
+    <fragment
+        android:id="@+id/pagosFragment"
+        android:name="com.example.pruebalista.ui.perfil.PagosFragment"
+        android:label="fragment_pagos"
+        tools:layout="@layout/fragment_pagos" >
+        <action
+            android:id="@+id/action_pagosFragment_to_nav_perfilFragment"
+            app:destination="@id/nav_perfilFragment" />
+        <action
+            android:id="@+id/action_pagosFragment_to_pagosModFragment"
+            app:destination="@id/pagosModFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagosModFragment"
+        android:name="com.example.pruebalista.ui.perfil.PagosModFragment"
+        android:label="fragment_pagos_mod"
+        tools:layout="@layout/fragment_pagos_mod" >
+        <action
+            android:id="@+id/action_pagosModFragment_to_pagosFragment"
+            app:destination="@id/pagosFragment" />
+        <argument
+            android:name="alumno"
+            app:argType="com.example.pruebalista.clases.Alumno" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosAlumFragment"
+        android:name="com.example.pruebalista.ui.perfil.datosAlumFragment"
+        android:label="fragment_datos_alum"
+        tools:layout="@layout/fragment_datos_alum" >
+        <action
+            android:id="@+id/action_datosAlumFragment_to_nav_perfilFragment"
+            app:destination="@id/nav_perfilFragment" />
+        <action
+            android:id="@+id/action_datosAlumFragment_to_datosModFragment"
+            app:destination="@id/datosModFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosModFragment"
+        android:name="com.example.pruebalista.ui.perfil.DatosModFragment"
+        android:label="fragment_datos_mod"
+        tools:layout="@layout/fragment_datos_mod" >
+        <action
+            android:id="@+id/action_datosModFragment_to_datosAlumFragment"
+            app:destination="@id/datosAlumFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passAlumFragment"
+        android:name="com.example.pruebalista.ui.perfil.PassAlumFragment"
+        android:label="fragment_pass_alum"
+        tools:layout="@layout/fragment_pass_alum" >
+        <action
+            android:id="@+id/action_passAlumFragment_to_nav_perfilFragment"
+            app:destination="@id/nav_perfilFragment" />
+        <action
+            android:id="@+id/action_passAlumFragment_to_passModFragment"
+            app:destination="@id/passModFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passModFragment"
+        android:name="com.example.pruebalista.ui.perfil.PassModFragment"
+        android:label="fragment_pass_mod"
+        tools:layout="@layout/fragment_pass_mod" >
+        <action
+            android:id="@+id/action_passModFragment_to_passAlumFragment"
+            app:destination="@id/passAlumFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misClasesPendientesFragment"
+        android:name="com.example.pruebalista.ui.misClases.misClasesPendientesFragment"
+        android:label="fragment_mis_clases_pendientes_list"
+        tools:layout="@layout/fragment_mis_clases_pendientes_list" >
+        <action
+            android:id="@+id/action_misClasesPendientesFragment_to_misClaseDetalleFragment"
+            app:destination="@id/misClaseDetalleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misClaseDetalleFragment"
+        android:name="com.example.pruebalista.ui.misClases.MisClaseDetalleFragment"
+        android:label="fragment_mis_clase_detalle"
+        tools:layout="@layout/fragment_mis_clase_detalle" >
+        <argument
+            android:name="clase"
+            app:argType="com.example.pruebalista.clases.Clase" />
+        <action
+            android:id="@+id/action_misClaseDetalleFragment_to_misClasesPendientesFragment"
+            app:destination="@id/misClasesPendientesFragment" />
+    </fragment>
+</navigation>

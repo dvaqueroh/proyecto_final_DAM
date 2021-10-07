@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.asignaturas.CompaClasesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:paddingTop="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="60dp"
+            android:paddingBottom="2dp"
+            android:text="COMPRAR LAS CLASES"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvNombreAsig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:paddingBottom="2dp"
+            android:text="asignatura" />
+
+        <Spinner
+            android:id="@+id/spinnerClases"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@color/md_indigo_50"
+            android:dropDownSelector="@color/md_indigo_200"
+            android:entries="@array/paquetesClases"
+            android:minWidth="80dp"
+            android:minHeight="50dp"
+            android:scrollbarSize="8dp"
+            android:textAlignment="center"
+            android:theme="@style/Theme.PruebaLista"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="60dp">
+
+            <Button
+                android:id="@+id/btComprar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comprar" />
+
+            <Button
+                android:id="@+id/btVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Volver" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
